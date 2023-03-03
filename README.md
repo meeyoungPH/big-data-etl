@@ -15,25 +15,25 @@ This project is based on Amazon review data for [video games]("https://s3.amazon
 
 ## Results
 First, the raw datset was read into a Spark Dataframe, with 1,785,997 records. The first 20 are shown here:
-![df](images/df.png)
+![df](Images/df.png)
 
 Next, four subset dataframes were created. The review_id_df, products_df, and vine_df were each created by selecting desired columns for the table.
-![review](images/review-df.png)
+![review](Images/review-df.png)
 
-![products](images/product-df.png)
+![products](Images/product-df.png)
 
-![vine](images/vine-df.png)
+![vine](Images/vine-df.png)
 
 The customer_df dataframe was created by counting the number of records grouped by customer_id to get the total number of records by customer. I presented the results in descending order of record counts.
 
-![customer](images/customer-df.png)
+![customer](Images/customer-df.png)
 
 Lastly, all four dataframes were loaded to the cloud Postgres server on AWS. The upload was confirmed by querying the tables for records in PgAdmin.
 
-![review table](images/review-table.png)
+![review table](Images/review-table.png)
 
-![products table](images/products-table.png)
+![products table](Images/products-table.png)
 
-![customer table](images/customer-table.png)
+![customer table](Images/customer-table.png)
 
-![vine table](images/vine-table.png)
+![vine table](Images/vine-table.png)
