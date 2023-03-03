@@ -15,6 +15,7 @@ This project is based on Amazon review data for [video games]("https://s3.amazon
 
 ## Results
 First, the raw datset was read into a Spark Dataframe, with 1,785,997 records. The first 20 are shown here:
+
 ![df](Images/df.png)
 
 Next, four subset dataframes were created. The review_id_df, products_df, and vine_df were each created by selecting desired columns for the table.
