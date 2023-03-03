@@ -19,6 +19,7 @@ First, the raw datset was read into a Spark Dataframe, with 1,785,997 records. T
 ![df](Images/df.png)
 
 Next, four subset dataframes were created. The review_id_df, products_df, and vine_df were each created by selecting desired columns for the table.
+
 ![review](Images/review-df.png)
 
 ![products](Images/product-df.png)
